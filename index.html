@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello World React App</title>
+  <!-- Add Bootstrap CSS link (you can replace it with your preferred version or host it locally) -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<div id="root"></div>
+
+<!-- Add React and ReactDOM libraries -->
+<script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+
+<!-- Add Babel to compile JSX to JavaScript -->
+<script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+
+<script type="text/babel">
+  // React component
+  class HelloWorld extends React.Component {
+    render() {
+      return (
+        <div className="jumbotron text-center">
+          <h1 className="display-4">Hello, Glenn!</h1>
+          <p className="lead">Welcome to the exciting world of React.js and front-end development.</p>
+          <hr className="my-4" />
+          <p>This is a simple React.js app with a Bootstrap Jumbotron.</p>
+          <p className="lead">
+            <a className="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+          </p>
+        </div>
+      );
+    }
+  }
+
+  // Render the component
+  ReactDOM.render(<HelloWorld />, document.getElementById('root'));
+</script>
+
+<!-- Add Bootstrap JS and Popper.js (required for Bootstrap) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
